@@ -6,7 +6,7 @@ ${AMAZON_URL}                 https://www.amazon.com
 ${AMAZON_INPUT_SEARCH}        id=twotabsearchtextbox
 ${AMAZON_BTN_SEARCH}          id=nav-search-submit-button
 ${AMAZON_RESULTS_ITEMS}       css=img.s-image, a[href*="/dp/"], div[data-asin]:not([data-asin=""])
-${AMAZON_FIRST_PRODUCT_LINK}  css=a.a-link-normal[href*="/dp/"], img.s-image >> nth=0
+${AMAZON_FIRST_PRODUCT_LINK}  css=div[data-asin]:not([data-asin=""]) a.a-link-normal[href*="/dp/"] >> nth=0
 ${AMAZON_PRODUCT_TITLE}       css=#productTitle, #title, #dp, #centerCol, body
 
 *** Keywords ***
