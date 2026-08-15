@@ -1,0 +1,32 @@
+# Robot Framework Outputs & Logs
+results/
+output.xml
+log.html
+report.html
+playwright-log.txt
+*.png
+*.webm
+*.zip
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# Node / NPM (se utilizado temporariamente para codegen)
+node_modules/
+package-lock.json
+
+# IDE & Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db

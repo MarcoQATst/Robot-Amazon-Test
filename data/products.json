@@ -1,0 +1,17 @@
+{
+  "fone_de_ouvido": {
+    "termo_busca": "fone de ouvido",
+    "filtro_conectividade": "Wireless",
+    "filtro_marca": "JBL"
+  },
+  "placa_de_video": {
+    "termo_busca": "placa de video"
+  },
+  "termo_inexistente": {
+    "termo_busca": "xyzqwe987654321nonexistentproduct",
+    "mensagem_sem_resultados": "No results for"
+  },
+  "busca_vazia": {
+    "termo_busca": ""
+  }
+}
