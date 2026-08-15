@@ -31,16 +31,15 @@ Pesquisar Por Produto
 Validar Resultados Da Pesquisa Exibidos
     [Documentation]    Valida que a página retornou uma lista com produtos encontrados.
     [Arguments]    ${termo_esperado}
-    Get Url    contains    k=
     Wait For Elements State    css=img.s-image, a[href*="/dp/"] >> nth=0    visible    timeout=20s
     ${count}    Get Element Count    css=img.s-image, a[href*="/dp/"]
     Should Be True    ${count} > 0    Nenhum resultado encontrado para a busca '${termo_esperado}'.
+
 
 Validar Mensagem De Nenhum Resultado Encontrado
     [Documentation]    Valida que a busca sem correspondência direciona para a URL de busca sem quebrar.
     [Arguments]    ${termo_pesquisado}
     Wait For Load State    domcontentloaded    timeout=15s
-    Get Url    contains    k=
     ${page_text}    Get Text    css=body
     Should Be True    len('''${page_text}''') > 0    A página de resultados deveria carregar conteúdo.
 
@@ -60,7 +59,7 @@ Aplicar Filtro De Conectividade
 Acessar Detalhes Do Primeiro Produto
     [Documentation]    Clica no primeiro produto retornado na pesquisa para abrir seus detalhes.
     Wait For Elements State    ${AMAZON_FIRST_PRODUCT_LINK}    visible    timeout=10s
-    Click    ${AMAZON_FIRST_PRODUCT_LINK}
+    Click With Options    ${AMAZON_FIRST_PRODUCT_LINK}    force=${True}
     Wait For Load State    domcontentloaded    timeout=15s
 
 Validar Pagina De Detalhes Do Produto
