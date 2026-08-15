@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🤖 Robot Framework + Playwright (Browser Library) E2E Automation
 
 [![Robot Framework](https://img.shields.io/badge/Robot%20Framework-7.0%2B-blue.svg?logo=robot-framework)](https://robotframework.org/)
@@ -178,7 +177,7 @@ O repositório possui uma pipeline configurada via **GitHub Actions** (`.github/
 Desenvolvido por Marco Aurelio Gomes — QA / Test Automation Engineer.
 
 - LinkedIn: [Marco Aurelio Gomes](https://www.linkedin.com/in/marcoaurelioqa)
-- GitHub: @seu-usuario (substitua pelo seu usuário)
+- GitHub: [@MarcoQATst](https://github.com/MarcoQATst)
 
 Um projeto pensado para demonstrar padrões profissionais de automação com Robot Framework e Playwright. Contribuições, issues e sugestões são bem-vindas.
 
